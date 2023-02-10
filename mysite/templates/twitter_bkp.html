@@ -1,0 +1,15 @@
+<html>
+    <head>
+        twitter
+    </head>
+    <body>
+        <p>
+        {% block content %}
+        <form method="POST" class="post-form" enctype="multipart/form-data">{% csrf_token %}  
+            <input type='string' name='title' placeholder="your title"/>  
+            <input type="submit" value="save"/>  
+        </form>
+        {% endblock %}
+        
+    </body>
+</html>

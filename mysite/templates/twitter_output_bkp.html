@@ -1,0 +1,21 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        
+        <p>
+        <h4>response:{{response}}</h4>
+        <h4>probability score:{{probability_score}}</h4>
+        <h4>Predicted topic:{{Predicted_topic}}</h4>  
+        <h4>tweet:{{tweet}}</h4>  
+     </p>
+     {% autoescape off %}
+
+        <div style="width:1000;height:100">
+            {{ twitter_html|safe }}
+        </div>
+
+        {% endautoescape %}
+    </body>
+</html>

@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html  >
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.5.2, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="{% static 'twitter/images/mbr.png' %}" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Home</title>
+  <link rel="stylesheet" href="{% static 'twitter/bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'twitter/bootstrap/css/bootstrap-grid.min.css' %}">
+  <link rel="stylesheet" href="{% static 'twitter/bootstrap/css/bootstrap-reboot.min.css' %}">
+  <link rel="stylesheet" href="{% static 'twitter/dropdown/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'twitter/socicon/css/styles.css' %}">
+  <link rel="stylesheet" href="{% static 'twitter/theme/css/style.css' %}">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap&display=swap"></noscript>
+  <link rel="preload" as="style" href="{% static 'twitter/mobirise/css/mbr-additional.css' %}"><link rel="stylesheet" href="{% static 'twitter/mobirise/css/mbr-additional.css' %}" type="text/css">
+  
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu1 cid-sPHYzReUgW" once="menu" id="menu1-1">
+    
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a>
+                        <img src="{% static 'twitter/images/mbr.png' %}" alt="Mobirise" style="height: 3rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" >TWITTER ANALYSIS</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black display-4" href="{% url 'index' %}">HOME</a>
+                    </li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section data-bs-version="5.1" class="form1 cid-sPHYFmh2We mbr-fullscreen" id="form1-2">
+
+    
+
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form method="POST" class="post-form" enctype="multipart/form-data">{% csrf_token %}
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling
+                            out the form!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some
+                            problem!</div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-12">
+                            <h1 class="mbr-section-title mb-4 mbr-fonts-style align-center display-2">
+                                <strong>NEGATIVE TOPIC CATEGORIZATION</strong></h1>
+                        </div>
+                        <div class="col-12">
+                            <p class="mbr-text mbr-fonts-style mb-5 align-center display-7"></p><p><strong><span style="font-size: 1.2rem;"><b>TOPIC-1)DELAY AND CUSTOMER SERVICE</b></span><br></strong></p><p><strong>TOPIC-2)BAGGAGE ISSUE<br></strong></p><p><strong>TOPIC-3)RESCHEDULE AND REFUND<br></strong></p><p><strong>TOPIC-4)PHONE AND ONLINE BOOKING</strong></p><strong>TOPIC-5)RESERVATION ISSUE<br>TOPIC-6)SEATING PREFENCES<br>TOPIC-7)EXTRA CHARGES<br>TOPIC-8)CUSTORMER EXPERIENCES</strong><br><p><br></p><p></p>
+                        </div>
+                        <div class="col-md col-12 form-group mb-3" data-for="name">
+                            <input type="text" name="title" placeholder="tweet" data-form-field="Name" class="form-control" id="name-form1-2">
+                        </div>
+                        
+                        <div class="mbr-section-btn col-12 col-md-auto">
+                            <button type="submit" class="btn btn-primary display-4" value="Submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

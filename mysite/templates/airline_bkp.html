@@ -1,0 +1,15 @@
+<html>
+    <head>
+        airline
+        
+    </head>
+    <body>
+        <p>
+           
+        <form method="POST" class="post-form" enctype="multipart/form-data">{% csrf_token %}  
+            {{form.as_p}}
+            <input type="submit" value="save"/>
+           </form>
+        </p>
+    </body>
+</html>
